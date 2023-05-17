@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content active">
+            <div class="choose">
+                <span class="passwords-generator active-btn">PASSWORD GENERATOR</span>
+            </div>
+
+
+            <div class="result">
+                <h4 class="password-result">RESULT WILL BE HERE</h4>
+                <p id="copied-p">COPIED!</p>
+                <img src="./copy.png" alt="">
+            </div>
+
+            <div class="range">
+                <div class="display-p">
+                    <p>LENGHT:</p>
+                    <p class="length"> 14</p>
+                </div>
+
+
+                <span>
+                    <h4>4</h4>
+                    <input type="range" max="24" min="4">
+                    <h4>24</h4>
+                </span>
+
+            </div>
+            <div class="checkboxes">
+                <div class="label-input">
+                    <label for="numbers">NUMBERS</label>
+                    <input checked type="checkbox" id="numbers">
+                </div>
+                <div class="label-input">
+                    <label for="letters">LETTERS</label>
+                    <input checked type="checkbox" id="letters">
+                </div>
+                <div class="label-input">
+                    <label for="symbols">SYMBOLS</label>
+                    <input type="checkbox" id="symbols">
+                </div>
+            </div>
+
+            <button class="generate-btn">GENERATE PASSWORD</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

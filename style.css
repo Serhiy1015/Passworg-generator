@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #6974d7, rgba(8, 20, 4, 0.5098039216));
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 375px;
+  height: 550px;
+  border: 1px solid black;
+  background-color: #0a0e31;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.29);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+.container .content .choose {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+.container .content .choose span {
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgba(128, 128, 128, 0.805);
+}
+.container .content .choose .active-btn {
+  color: #fff;
+}
+.container .content .result {
+  width: 75%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+.container .content .result P {
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 10px;
+  color: rgb(128, 128, 128);
+  opacity: 0;
+}
+.container .content .result .visible-p {
+  opacity: 1;
+}
+.container .content .result img {
+  width: 20px;
+  filter: contrast(0);
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.container .content .result:hover img {
+  opacity: 1;
+}
+.container .content .range {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+}
+.container .content .range .display-p {
+  display: flex;
+  gap: 3px;
+}
+.container .content .range span {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 20px 0;
+  border-radius: 12px;
+  font-size: 14px;
+}
+.container .content .range span input[type=range] {
+  width: 60%;
+  height: 3px;
+  background-color: #ff0000;
+  border-radius: 4px;
+}
+.container .content .range p {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+.container .content .checkboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  width: 75%;
+  gap: 10px;
+}
+.container .content .checkboxes .label-input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .content .checkboxes .label-input input,
+.container .content .checkboxes .label-input label {
+  cursor: pointer;
+}
+.container .content .checkboxes .label-input input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.container .content .checkboxes .label-input input[type=checkbox]:checked::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #26ff00;
+  border-radius: 50%;
+}
+.container .content .checkboxes .label-input input[type=checkbox]::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.container .content .generate-btn {
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  border-radius: 12px;
+  border: 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 16px;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}/*# sourceMappingURL=style.css.map */
